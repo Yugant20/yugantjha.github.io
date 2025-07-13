@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-38WK2VNRF3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-38WK2VNRF3');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-38WK2VNRF3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-38WK2VNRF3');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yugant Jha</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
+  <header class="fade-in">
     <div class="container">
-      <h2 style="color: red;">
-        UNDER CONSTRUCTION!!!</h2>
-        <h1>Yugant Jha</h1>
+      <h2><span>UNDER CONSTRUCTION!!!</span></h2>
+      <h1>Yugant Jha</h1>
       <p class="tagline">CS @ UT Dallas | Sophomore Year | Collegium V Honors</p>
       <nav>
         <a href="#about">About</a>
@@ -30,7 +29,6 @@
         <a href="#certifications">Certifications</a>
         <a href="#skills">Skills</a>
         <a href="#awards">Awards</a>
-        <a href="#courses">Courses</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -56,7 +54,8 @@
     <div class="container">
       <h2>Experience</h2>
       <div class="card">
-        <h3>Student Assistant - University Housing Office</h3>
+        <h3 class="exp-header"> Student Assistant - University Housing Office 
+        <span class="exp-logo"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WvMHoLHLfkmmC3aUDmRcmgnbfYYaDsCowg&s" alt="Housing Logo" /> </span></h3>
         <p><strong>The University of Texas at Dallas | Part-time</strong></p>
         <p>December 2024 to Present | 8 months</p>
         <p>Richardson, Texas, United States | On-site</p>
@@ -68,9 +67,9 @@
   <section id="education" class="section">
     <div class="container">
       <h2>Education</h2>
-      <img src="https://cdn.brandfetch.io/idI2KAi4Vd/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" alt="UTD Logo" style="max-width: 150px; margin-bottom: 1rem;">
       <div class="card">
-        <h3>The University of Texas at Dallas</h3>
+        <h3 class="utd-header">The University of Texas at Dallas
+        <span class="utd-logo"><img src="https://cdn.brandfetch.io/idI2KAi4Vd/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B" alt="UTD Logo" style="max-width: 150px; margin-bottom: 1rem;"></span></h3>
         <p>Bachelor of Science - BS, Computer Science</p>
         <p>August 2024 - May 2028</p>
         <p>Erik Jonsson School of Engineering & Computer Science</p>
@@ -83,26 +82,63 @@
   <section id="certifications" class="section light">
     <div class="container">
       <h2>Licenses & Certifications</h2>
-      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="License Icon" style="max-width: 100px; margin-bottom: 1rem;">
       <div class="card">
         <h3>Microsoft Python Programming Fundamentals</h3>
+        <p>
+  <img src="https://cdn-ildejnh.nitrocdn.com/NmgBpnnVABjmozYSTbZrHfYyZUokaGcV/assets/images/optimized/rev-959246b/www.langoly.com/wp-content/uploads/2021/09/coursera-logo.png" alt="Coursera Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 6px;" />
+  Coursera
+</p>
         <p>Issued by Microsoft | June 2025</p>
         <p>Credential ID: N6J629RDEO5E</p>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>Skills</h2>
-      <img src="https://cdn-icons-png.flaticon.com/512/103/103453.png" alt="Skills Icon" style="max-width: 60px; margin-bottom: 1rem;">
-      <ul>
-        <li>SQL</li>
-        <li>Python</li>
-        <li>C++</li>
-      </ul>
+<section id="skills" class="section">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-wrapper">
+      <button class="scroll-btn left" onclick="scrollSkills('left')">
+        &#10094;
+      </button>
+
+      <div class="skills-scroll" id="skillsScroll">
+        <div class="skill-card">
+          <img src="https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png" alt="Python Logo" />
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++ Logo" />
+          <h3>C++</h3>
+        </div>
+        <div class="skill-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4299/4299956.png" alt="SQL Logo" />
+          <h3>SQL</h3>
+        </div>
+        <div class="skill-card">
+          <img src="https://numpy.org/images/logo.svg" alt="NumPy Logo" />
+          <h3>NumPy</h3>
+        </div>
+        <div class="skill-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg" alt="Pandas Logo" />
+          <h3>Pandas</h3>
+        </div>
+        <div class="skill-card">
+          <img src="https://matplotlib.org/_static/images/logo2.svg" alt="Matplotlib Logo" />
+          <h3>Matplotlib</h3>
+        </div>
+      </div>
+
+      <button class="scroll-btn right" onclick="scrollSkills('right')">
+        &#10095;
+      </button>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
+
 
   <section id="awards" class="section light">
     <div class="container">
@@ -124,40 +160,43 @@
     </div>
   </section>
 
-  <section id="courses" class="section">
-    <div class="container">
-      <h2>Courses</h2>
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Courses Icon" style="max-width: 60px; margin-bottom: 1rem;">
-      <ul>
-        <p><b>SPRING 2025</b></p>
-        <li>American Local Government (GOVT 2305)</li>
-        <li>Computer Science I (CS 1337)</li>
-        <li>Differential Calculus (MATH 2413)</li>
-        <li>Discrete Mathematics for Computing I (CS 2305)</li>
-        <li>Integral Calculus (MATH 2414)</li>
-        <li>Mechanics (PHYS 2325)</li>
-        <p><b>FALL 2024</b></p>
-        <li>Introduction to Computer Science and Software Engineering (CS 1200)</li>
-        <li>Introduction to Engineering and Computer Science (ECS 1100)</li>
-        <li>Programming Fundamentals in C++ (CS 1436)</li>
-        <li>State and Local Government (GOVT 2306)</li>
-      </ul>
+<section id="contact" class="section light">
+  <div class="container">
+    <h2>Contact</h2>
+    <div class="card" style="text-align: center; padding: 1.5rem;">
+      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+        <a href="mailto:yugantjha20@gmail.com" target="_blank" title="Email">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yugant-jha-274b59244/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/Yugant20" target="_blank" title="GitHub">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+      </div>
     </div>
-  </section>
-
-  <section id="contact" class="section light">
-    <div class="container">
-      <h2>Contact</h2>
-      <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone Icon" style="max-width: 60px; margin-bottom: 1rem;">
-      <p>Email: <a href="mailto:yugantjha20@gmail.com">yugantjha20@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/yugant-jha-274b59244/" target="_blank">Yugant Jha</a></p>
-    </div>
-  </section>
+  </div>
+</section>
 
   <footer>
     <p>© 2025 Yugant Jha</p>
   </footer>
 
   <script src="script.js"></script>
+
+  <script>
+  function scrollSkills(direction) {
+    const container = document.getElementById('skillsScroll');
+    const scrollAmount = 200;
+
+    if (direction === 'left') {
+      container.scrollLeft -= scrollAmount;
+    } else {
+      container.scrollLeft += scrollAmount;
+    }
+  }
+</script>
+</script>
 </body>
 </html>
