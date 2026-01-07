@@ -1,6 +1,6 @@
 // Typing Animation
 const typingText = document.getElementById("typingText")
-const phrases = ["CS @ UT Dallas", "Sophomore Year", "Collegium V Honors", "AI/ML Enthusiastic]
+const phrases = ["CS @ UT Dallas", "Sophomore Year", "Collegium V Honors", "AI/ML Enthusiastic"]
 
 let phraseIndex = 0
 let charIndex = 0
