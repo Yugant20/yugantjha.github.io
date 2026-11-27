@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#141412">
+  <meta name="theme-color" content="#121417">
   <meta name="description" content="Yugant Jha’s software and machine learning portfolio. Explore forecasting projects, experience, and coursework at UT Dallas.">
   <title>Yugant Jha — Software &amp; Machine Learning</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff8252'/%3E%3Ctext x='10' y='46' font-family='Arial' font-weight='bold' font-size='38'%3EYJ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b6cbd9'/%3E%3Ctext x='10' y='46' font-family='Arial' font-weight='bold' font-size='38'%3EYJ%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
+  <script src="sculpture.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body id="top">
@@ -23,7 +24,7 @@
     <div class="intro">
       <p class="eyebrow"><i></i> Software &amp; machine learning</p>
       <h1 id="name">Yugant<br>Jha<span>.</span></h1>
-      <p class="lead">Computer science student at UT Dallas building software that turns data into decisions.</p>
+      <p class="lead">I build software for live broadcasts, machine learning, and the people behind the controls. CS at UT Dallas.</p>
       <a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
     </div>
     <div class="folio"><span>Personal portfolio</span><span>Dallas, TX</span></div>
@@ -32,13 +33,25 @@
     <h2>Selected work<span>.</span></h2>
     <div class="projects">
       <article>
-        <div class="cover travel" aria-hidden="true"><div class="globe"></div><div class="route"></div><b>FX</b></div>
+        <div class="cover"><img src="assets/broadcast.webp" width="1000" height="520" loading="lazy" alt=""></div>
+        <p class="meta">Broadcast software · 2026</p>
+        <h3>Statvello</h3>
+        <p>I’m building a sports broadcast console that combines live video, player identification, and real-time match data so operators can put graphics on air.</p>
+      </article>
+      <article>
+        <div class="cover"><img src="assets/layers.webp" width="1000" height="520" loading="lazy" alt=""></div>
+        <p class="meta">Full-stack application · 2026</p>
+        <h3>MedDecode AI</h3>
+        <p>A React and FastAPI application that turns medical reports into patient-friendly summaries, with authenticated uploads and downloadable PDFs.</p>
+      </article>
+      <article>
+        <div class="cover travel" aria-hidden="true"><img src="assets/orbital.webp" width="1000" height="520" loading="lazy" alt=""></div>
         <p class="meta">AIM Club Project · 2025</p>
         <h3>TravelBudgetFX</h3>
         <p>A travel planner that brings exchange rates, trip budgets, and itineraries together. I helped build its Temporal Fusion Transformer to forecast currency trends.</p>
       </article>
       <article>
-        <div class="cover market" aria-hidden="true"><div class="bars"></div><b>7<span>day</span></b></div>
+        <div class="cover market" aria-hidden="true"><img src="assets/forecast.webp" width="1000" height="520" loading="lazy" alt=""></div>
         <p class="meta">Personal Project · 2025</p>
         <h3>Stock Price Forecast</h3>
         <p>A full-stack app for exploring prices, market history, and seven-day forecasts. FastAPI connects Yahoo Finance and Finnhub data to an XGBoost model and stores predictions in Supabase.</p>
@@ -49,6 +62,7 @@
     <div><p class="eyebrow"><i></i> Profile</p><h2>About me<span>.</span></h2><p class="bio">I study computer science at UT Dallas. I enjoy the backend work behind a useful interface, from designing APIs to training models on real-world data.</p></div>
     <div class="details">
       <details id="experience" open><summary>Experience</summary>
+        <h4>Software Engineering Intern · Pixotope</h4><p>May–August 2026 · Developed operator workflows for real-time broadcast software and tested multi-machine systems with Vitest and Cypress.</p>
         <h4>Project Mentee · Artificial Intelligence Society, UT Dallas</h4><p>September–December 2025 · Worked with the AIM team on currency prediction and travel budgeting for TravelBudgetFX.</p>
         <h4>Front Desk Student Assistant · UT Dallas Housing</h4><p>December 2024–present · Assist residents, maintain housing records, and coordinate with staff to resolve student concerns.</p>
       </details>
